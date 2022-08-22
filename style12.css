@@ -125,6 +125,11 @@ body {
 	background: var(--dark-blue);
 }
 
+  @media screen and (orientation: landscape) {
+	canvas{width: 100% !important;
+    height: 100vh !important;
+    object-fit: cover;}
+  }
 @media only screen and (min-width: 320px) and (max-width: 768px) {
 	.filebox {
 	  width:100%;
@@ -133,7 +138,6 @@ body {
 	  width:100%;
 	  float:none;
 	}
-  }
   @media screen and (orientation: landscape) {
 	.filebox {
 		width:100%;
@@ -141,17 +145,16 @@ body {
 	  .filebox {
 		width:100%;
 		float:none;
+		height: 90%;
+		padding: 20px;
 	  }
-	canvas{width: 100% !important;
-    height: 100vh !important;
-    object-fit: cover;}
+	  .img-area {height: 200px;}
+  }
   }
   @media screen and (orientation: portrait) {
-	.filebox {
-		width:100%;
-	  }
+	
 	  .filebox {
-		width:100%;
+		width: 90%;
 		float:none;
 	  }
   }
@@ -169,4 +172,5 @@ body {
 	transition: all .3s ease;
 	/* border: double; */
 	position: absolute;
+	
   }
