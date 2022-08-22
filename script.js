@@ -2,14 +2,17 @@ const selectImage = document.querySelector('.select-image');
 const inputFile = document.querySelector('#file');
 const imgArea = document.querySelector('.img-area');
 const fileRemove = document.getElementById("remove-image");
+const updateImage=document.querySelector('.update-image');
+
+updateImage.addEventListener('click',function (){
+	inputFile.click();
+})
 selectImage.addEventListener('click', function () {
 inputFile.click();
 
 	// img.style.visibility = (visible ? 'visible' : 'hidden');
 })
 
-
-var testimage = [];
 inputFile.addEventListener('change', function () {
 	const image = this.files[0]
 	if(image.size < 200000000) {
@@ -20,13 +23,16 @@ inputFile.addEventListener('change', function () {
 			const imgUrl = reader.result;
 			const img = document.createElement('img');
 			img.src = imgUrl;
+			var testimage = [];
 			testimage.push(imgUrl);
 			newfunction(testimage);
-			imgArea.appendChild(img);
+			// imgArea.appendChild(img);
 			imgArea.classList.add('active');
 			imgArea.dataset.img = image.name;
 			const box = document.getElementsByClassName('filebox')[0];
 			box.style.visibility = 'hidden';
+			
+			
 		}
 		reader.readAsDataURL(image);
 	} 
@@ -38,7 +44,15 @@ function newfunction(arr){
 		renderer = new THREE.WebGLRenderer();
 		renderer.setSize(window.innerWidth, window.innerHeight);
 		renderer.setPixelRatio( window.devicePixelRatio );
+		var elements = document.getElementsByTagName('canvas');
+		//console.log(elements.length);
+		if(elements.length == 1){
+			document.body.removeChild(elements[0]);
+		}
 		document.body.appendChild(renderer.domElement);
+
+		const updateimage = document.getElementsByClassName('update-image')[0];
+		updateimage.style.display = 'block';
 
 		// creating a new scene
 		var scene = new THREE.Scene();
