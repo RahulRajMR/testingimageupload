@@ -134,3 +134,21 @@ body {
 	  float:none;
 	}
   }
+  @media screen and (orientation: landscape) {
+	.filebox {
+		width:100%;
+	  }
+	  .filebox {
+		width:100%;
+		float:none;
+	  }
+  }
+  @media screen and (orientation: portrait) {
+	.filebox {
+		width:100%;
+	  }
+	  .filebox {
+		width:100%;
+		float:none;
+	  }
+  }
