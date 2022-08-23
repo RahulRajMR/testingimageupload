@@ -150,7 +150,7 @@ body {
 		padding: 20px;
 		top: 10px;
 	  }
-	  .img-area {height: 120px;}
+	  .img-area {height: 130px;}
   }
   }
   @media screen and (orientation: portrait) {
@@ -162,17 +162,21 @@ body {
   }
   .update-image{
 	display: block;
-	/* width: 100%;
-	padding: 16px 0; */
-	border-radius: 15px;
-	background: var(--blue);
-	color: #fff;
-	font-weight: 500;
-	font-size: 16px;
-	border: none;
-	cursor: pointer;
-	transition: all .3s ease;
-	/* border: double; */
-	position: absolute;
+	border-radius: 12px;
+    background: var(--blue);
+    color: #fff;
+    font-weight: 500;
+    font-size: 15px;
+    border: none;
+    cursor: pointer;
+    transition: all .3s ease;
+    /* border: double; */
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    padding: 10px;
+    max-width: 180px;
+    margin: 0 auto;
 	
   }
