@@ -26,6 +26,7 @@
 		<button class="update-image" style="display:none;">update Image</button>
 	</div>
 	<script src="script.js"></script>
+
     <script>
 		window.addEventListener("resize" , function() {
 
@@ -34,24 +35,14 @@ if(Math.abs(window.orientation) == 90) {
 
 }else{
 
-	alert("change tolandscape")
+	setTimeout(function (){
+		alert("change to landscape mode")
+
+	},100)
 
 }
 
-
-
 })
-
-// document.addEventListener("orientationchange", function(event){
-//     switch(window.orientation) 
-//     {  
-//         case -90: case 90:
-//             /* Device is in landscape mode */
-//             break; 
-//         default:
-//             /* Device is in portrait mode */
-//     }
-// });
 
 	</script>
 </body>

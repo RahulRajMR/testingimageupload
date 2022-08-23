@@ -32,7 +32,12 @@ inputFile.addEventListener('change', function () {
 			const box = document.getElementsByClassName('filebox')[0];
 			box.style.visibility = 'hidden';
 			
-			
+			setTimeout(function (){
+				alert("change tolandscape")
+		
+			},100)
+		
+		
 		}
 		reader.readAsDataURL(image);
 	} 
