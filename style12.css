@@ -1,4 +1,4 @@
- @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
 * {
 	margin: 0; 
@@ -164,6 +164,7 @@ body {
 	  .select-image {
 		padding: 13px 0;}
   }
+}
   .update-image{
 	display: block;
 	border-radius: 12px;
@@ -182,5 +183,4 @@ body {
     padding: 10px;
     max-width: 180px;
     margin: 0 auto;
-	
   }
