@@ -132,7 +132,7 @@ body {
   }
   @media only screen and (max-width: 767px){
 	@media screen and (orientation: landscape) {
-		  .img-area{height: 170px !important;}
+		  .img-area{height: 70px !important;}
 	  }
 
   }
