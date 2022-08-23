@@ -76,8 +76,8 @@ function newfunction(arr){
 		const controls = new THREE.OrbitControls(camera, renderer.domElement);
 		// controls.maxPolarAngle = Math.PI/2.1;  
 
-			controls.minDistance=30;
-			 controls.maxDistance=50;
+			controls.minDistance=20;
+			 controls.maxDistance=20;
 			
 
 		render();
