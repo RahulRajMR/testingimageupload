@@ -33,9 +33,9 @@ inputFile.addEventListener('change', function () {
 			box.style.visibility = 'hidden';
 			
 			setTimeout(function (){
-				alert("change tolandscape")
+				alert("change to landscape")
 		
-			},100)
+			},10)
 		
 		
 		}
