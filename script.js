@@ -12,7 +12,7 @@ inputFile.click();
 
 	// img.style.visibility = (visible ? 'visible' : 'hidden');
 })
-var testimage = [];
+
 inputFile.addEventListener('change', function () {
 	const image = this.files[0]
 	if(image.size < 200000000) {
@@ -23,7 +23,7 @@ inputFile.addEventListener('change', function () {
 			const imgUrl = reader.result;
 			const img = document.createElement('img');
 			img.src = imgUrl;
-			
+			var testimage = [];
 			testimage.push(imgUrl);
 			newfunction(testimage);
 			// imgArea.appendChild(img);
@@ -91,8 +91,6 @@ function newfunction(arr){
 	//console.log(panoramaNumber);
 }
 
-$(window).on('resize', function(){
-    newfunction(testimage);
-});
+
 	
 	
