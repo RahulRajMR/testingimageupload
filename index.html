@@ -27,20 +27,32 @@
 	</div>
 	<script src="script.js"></script>
     <script>
-		window.addEventListener("resize" , function() {
+// 		window.addEventListener("resize" , function() {
 
-if(Math.abs(window.orientation) == 90) {
-
-
-}else{
-
-	// alert("change tolandscape")
-
-}
+// if(Math.abs(window.orientation) == 90) {
 
 
+// }else{
 
-})
+// 	alert("change tolandscape")
+
+// }
+
+
+
+// })
+
+document.addEventListener("orientationchange", function(event){
+    switch(window.orientation) 
+    {  
+        case -90: case 90:
+            /* Device is in landscape mode */
+            break; 
+        default:
+            /* Device is in portrait mode */
+    }
+});
+
 	</script>
 </body>
 </html>
