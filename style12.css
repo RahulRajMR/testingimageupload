@@ -150,7 +150,9 @@ body {
 		padding: 20px;
 		top: 10px;
 	  }
-	  .img-area {height: 130px;}
+	  .img-area {
+	  height: 70%;
+	  margin-bottom: 4%;
   }
   }
   @media screen and (orientation: portrait) {
@@ -159,6 +161,8 @@ body {
 		width: 90%;
 		float:none;
 	  }
+	  .select-image {
+		padding: 13px 0;}
   }
   .update-image{
 	display: block;
