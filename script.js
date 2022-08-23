@@ -77,7 +77,7 @@ function newfunction(arr){
 		// controls.maxPolarAngle = Math.PI/2.1;  
 
 			controls.minDistance=20;
-			 controls.maxDistance=20;
+			controls.maxDistance=20;
 			
 
 		render();
