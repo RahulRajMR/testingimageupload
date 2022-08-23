@@ -32,10 +32,10 @@ inputFile.addEventListener('change', function () {
 			const box = document.getElementsByClassName('filebox')[0];
 			box.style.visibility = 'hidden';
 			
-			setTimeout(function (){
-				alert("change to landscape")
+			// setTimeout(function (){
+			// 	alert("change to landscape")
 		
-			},10)
+			// },10)
 		
 		
 		}
